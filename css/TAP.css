@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap');
+
+/* Reset some default styles for the header */
+body,
+h1,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    list-style: none;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.home {
+    width: 80%;
+    /* Adjust the width as needed */
+    height: 200px;
+    /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    padding: 11%;
+}
+
+.content {
+    flex: 1;
+    /* This makes the content take all available space */
+    padding-right: 32%;
+    line-height: 1.2;
+    margin-bottom: 10%;
+}
+
+.content span {
+    font-size: 19px;
+    color: #cb3931;
+
+}
+
+.logo {
+    /* max-height: 100px;  Adjust the image height as needed*/
+    margin-top: -10%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .home .content {
+        padding: 3px;
+        padding-bottom: 3px;
+    }
+
+    .home .logo {
+        display: none;
+    }
+}
+
+.info-container {
+    background-color: #f0f0f0;
+    margin-left: 10%;
+    /* width: 100%;
+    height: 100%; */
+    margin-top: -10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8% 10%;
+    align-items: center;
+}
+
+.info-container .box {
+    flex: 1 1 45%;
+}
+
+.info-container .box p {
+    line-height: 1.2;
+}
+
+.info-container .box .list {
+    margin-left: -20%;
+    margin-top: -9%;
+    line-height: 1.5;
+}
+
+.info-container .box .list {
+    color: #cb3931;
+    font-weight: bold;
+}
+
+
+.info-container .box p {
+    font-size: 100px;
+}
+
+.info-container .box:nth-child(2) {
+    width: 80%;
+}
+
+.info-container .list ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2.2;
+}
+
+.info-container.list ul li {
+    margin-bottom: 5px;
+}
+
+.info-container .info ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 60%;
+}
+
+.info-container .info ul li{
+    margin-right: 5%;
+    font-size: 28px;
+    margin-top: -3%;
+
+}
+
+.box-content {
+    flex: 1;
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) 
+{
+    .info-container {
+        display: flex;
+        justify-content: center;
+        /* align-content: center; */
+        flex-direction: column;
+    }
+
+    .info-container .box p{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .info-container .box .list{
+        text-align: center;
+        margin-bottom: 21%;
+        margin-left: 1%;
+    }
+
+    .info-container .box h1{
+        width: 100%;
+        font-size: 16px;
+    }
+   
+}
+
+/* CSS for the footer section */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4% 10%;
+    align-items: center;
+}
+
+/* CSS for the boxes within the footer section */
+/* .box {
+    width: 48%;
+    /* Adjust the width as needed to create the desired gap between boxes 
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+} */
+
+.box h1 {
+    color: #cb3931;
+    font-size: 30px;
+}
+
+.footer .box .text {
+    margin-top: 10%;
+}
+
+.footer .box .text span {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.footer .box .text h2,
+.footer .box .info h2 {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+    margin: 6px -5px;
+}
+
+.footer .box .text h2 span,
+.footer .box .info h2 span {
+    color: #cb3931;
+    font-style: normal;
+}
+
+.footer .box .text p,
+.footer .box .info p {
+    margin-top: -3px;
+    margin-left: -5px;
+    color: #ccc;
+    font-size: 14px;
+    width: 71%;
+}
+
+.footer .box .info {
+    margin-top: 10%;
+}
+
+.footer .box .info span {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+/* CSS for the "text" and "info" sections within the box */
+.footer .text,
+.info {
+    flex: 1;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        margin-bottom: 28%;
+        margin-left: 11%;
+    }
+
+    .footer .box .text h2,
+    .footer .box .info h2 {
+        margin-top: -1%;
+    }
+}
