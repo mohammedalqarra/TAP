@@ -52,9 +52,9 @@ header {
 }
 
 .logo img {
-    width: 70%;
+    width: 79%;
     margin-left: 20%;
-    margin-top: 22px;
+    margin-top: 79px;
 }
 
 /* Media query for responsiveness */
@@ -89,8 +89,8 @@ header {
 
 
 .info-container .box .list {
-    margin-left: -20%;
-    margin-top: -9%;
+    margin-left: -40%;
+    margin-top: 1%;
     line-height: 1.5;
 }
 
@@ -159,6 +159,7 @@ header {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .info-container {
+        width: 100%;
         display: flex;
         justify-content: center;
         /* align-content: center; */
@@ -275,7 +276,7 @@ header {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .footer {
-        margin-bottom: 28%;
+        margin-bottom:  42%;
         margin-left: 11%;
     }
 
@@ -283,4 +284,9 @@ header {
     .footer .box .info h2 {
         margin-top: -1%;
     }
+}
+
+
+@media (max-width: 320px) {
+
 }
