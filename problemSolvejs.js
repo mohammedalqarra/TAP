@@ -45,15 +45,5 @@ const anagrams = [
   "bam ratchet mechatronics",
 ];
 
-const anagram = "treat";
-console.log(
-  isAnagramInArray(anagram, [
-    "tater",
-    "tree",
-    "teart",
-    "tetra",
-    "heart",
-    "hamster",
-  ])
-);
+
 console.log(isAnagramInArray("Bob Ziroll Teacher", anagrams));
