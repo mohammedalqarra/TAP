@@ -1,5 +1,5 @@
 function countCharacters(character) {
-  // Helper function to count the occurrence of each character in a character
+
   const charCount = new Map();
   for (const char of character.toLowerCase()) {
     charCount.set(char, (charCount.get(char) || 0) + 1);
